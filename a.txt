@@ -1,0 +1,77 @@
+hdfs namenode -format（格式化）
+cmd再切换到D:\hadoop-
+	
+www.vyibc.com.w.kunlunca.com
+47.97.167.185
+开启 hadoop 历史记录日志服务
+sbin/mr-jobhistory-daemon.sh  start historyserver
+开发hbase thrift 服务
+./hbase-daemon.sh start thrift
+hbase shell
+
+netstat  -anp  |grep  3306
+
+# 都可以远程操作了
+hadoop fs -chmod 777 /
+vim /etc/ssh/ssh_config
+
+export JAVA_HOME=/usr/local/jdk1.8.0_201
+export PATH=$PATH:$JAVA_HOME/bin
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export JAVA_HOME PATH CLASSPATH
+export PATH=/root/anaconda3/bin:$PATH
+export HADOOP_HOME=/usr/local/hadoop-2.6.1
+export PATH=$HADOOP_HOME/bin:$PATH
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
+create "new_music_table" ,"meta-data" ,"flags"
+create "article" ,"cf"
+
+Rowkey: 43218
+43218 info:name = lisi1 timestamp = 1586024987757
+
+pythonCode]hadoop jar /usr/local/hadoop-2.6.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.1.jar wordcount /input /output2
+
+article_98980_2019-03-20
+get 'article_action_table' ,  'article_93715_2019-03-21'
+scan ‘article_action_table’, FILTER=>“ValueFilter(=, ‘substring:11’)
+
+scan ‘article_action_table’, FILTER=>“ValueFilter(=, ‘binary:N’)”
+
+scan ‘article_action_table’, {FILTER=>RowFilter.new(CompareFilter::CompareOp.valueOf(‘EQUAL’), RegexStringComparator.new(’^article_93715_2019-03-21’))}
+
+sys.path.append('k:\program files\anaconda\lib\site-packages')
+
+ k:\program files\anaconda\lib\site-packages
+
+
+ put.add(Bytes.toBytes("cf"),Bytes.toBytes("query"), Bytes.toBytes(1l));    
+
+scp –r /home/hadoop hadoop@192.168.10.208:/home/hadoop
+
+scp -r /usr/local/hadoop-2.6.1 root@slave1:/usr/local/hadoop-2.6.1
+
+scp /etc/profile root@slave1:/etc/
+
+source /etc/profile
+
+
+        Configuration conf = new Configuration();
+
+        //访问本地
+        conf.set("mapreduce.framework.name","local");
+        conf.set("fs.defaultFS","file:///");
+
+
+
+export JAVA_HOME=/usr/local/jdk1.8.0_201
+export PATH=$PATH:$JAVA_HOME/bin
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export JAVA_HOME PATH CLASSPATH
+export PATH=/root/anaconda3/bin:$PATH
+export HADOOP_HOME=/usr/local/hadoop-2.6.1
+export PATH=$HADOOP_HOME/bin:$PATH
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
+export HBASE_HOME=/usr/local/hbase
+export PATH=$PATH:$HBASE_HOME/bin
